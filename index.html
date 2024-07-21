@@ -1,40 +1,87 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+  <title>Observabilidade</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+  <link rel="stylesheet" href="dist/reset.css" />
+  <link rel="stylesheet" href="dist/reveal.css" />
+  <link rel="stylesheet" href="dist/theme/black.css" />
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+  <style>
+    .fragment.blur {
+      filter: blur(5px);
+    }
+    .fragment.blur.visible {
+      filter: none;
+    }
+  </style>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+  <!-- Theme used for syntax highlighted code -->
+  <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section data-background-image="https://img.freepik.com/vetores-gratis/fundo-hexagonal-com-gradiente-escuro_52683-63120.jpg?w=740&t=st=1721520972~exp=1721521572~hmac=ec183220fee925f0e493b2ccc0a87312500b2ab8cd5d26159cc99bc6a25e8c59">
+        <h3 class="r-fit-text">Introdução a Observabilidade</h3>
+      </section>
+      <section>
+        <section data-background-image="examples/assets/image.jpg">
+          <h2 class="r-fit-text fragment custom blur">Sobre mim</h2>
+        </section>
+        <section data-background-image="https://img.freepik.com/vetores-gratis/fundo-hexagonal-com-gradiente-escuro_52683-63120.jpg?w=740&t=st=1721520972~exp=1721521572~hmac=ec183220fee925f0e493b2ccc0a87312500b2ab8cd5d26159cc99bc6a25e8c59">
+          <h3>Dione Bastos</h3>
+        </section>
+        <section data-background-image="https://img.freepik.com/vetores-gratis/fundo-hexagonal-com-gradiente-escuro_52683-63120.jpg?w=740&t=st=1721520972~exp=1721521572~hmac=ec183220fee925f0e493b2ccc0a87312500b2ab8cd5d26159cc99bc6a25e8c59">
+          <h3>Sistema de Informação</h3>
+        </section>
+        <section data-background-image="https://img.freepik.com/vetores-gratis/fundo-hexagonal-com-gradiente-escuro_52683-63120.jpg?w=740&t=st=1721520972~exp=1721521572~hmac=ec183220fee925f0e493b2ccc0a87312500b2ab8cd5d26159cc99bc6a25e8c59">
+          <h2>2021</h2>
+        </section>
+        <section data-background-image="https://img.freepik.com/vetores-gratis/fundo-hexagonal-com-gradiente-escuro_52683-63120.jpg?w=740&t=st=1721520972~exp=1721521572~hmac=ec183220fee925f0e493b2ccc0a87312500b2ab8cd5d26159cc99bc6a25e8c59">
+          <h2>Tecnologias Disrruptivas (blockchain/AI)</h2>
+        </section>
+      </section>
+        <section>
+          <p>Observabilidade é um conceito crucial no campo de engenharia de software e operações de TI, que se refere à capacidade de medir e monitorar o estado interno de um sistema através da coleta, análise e visualização de dados gerados por esse sistema.</p>
+        </section>
+        <section>
+          <p>Esses dados incluem métricas, logs e rastreamentos (traces), que são utilizados para entender o comportamento e o desempenho do sistema, identificar e diagnosticar problemas, e garantir a confiabilidade e a disponibilidade dos serviços.</p>
+        </section>
+        <section>
+          <section>
+            <h2>
+              Grafana
+            </h2>
+          </section>
+          <section>
+            <p>Grafana é uma aplicação web de análise de código aberto multiplataforma e visualização interativa da web</p>
+            <img src="https://serviceup.com.br/wp-content/uploads/2022/11/grafana.png">
+          </section>
+        </section>
+    </div>
+  </div>
+
+  <script src="dist/reveal.js"></script>
+  <script src="plugin/notes/notes.js"></script>
+  <script src="plugin/markdown/markdown.js"></script>
+  <script src="plugin/highlight/highlight.js"></script>
+  <script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+      hash: true,
+
+      // Learn about plugins: https://revealjs.com/plugins/
+      plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+    });
+  </script>
+</body>
+
 </html>
