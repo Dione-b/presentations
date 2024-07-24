@@ -12,11 +12,12 @@
   <link rel="stylesheet" href="dist/theme/black.css" />
 
   <style>
-    .fragment.blur {
+    .blur {
       filter: blur(5px);
-    }
-    .fragment.blur.visible {
-      filter: none;
+      -webkit-filter: blur(5px);
+      -moz-filter: blur(5px);
+      -o-filter: blur(5px);
+      -ms-filter: blur(5px);
     }
   </style>
 
@@ -27,12 +28,17 @@
 <body>
   <div class="reveal">
     <div class="slides">
-      <section data-background-image="https://img.freepik.com/vetores-gratis/fundo-hexagonal-com-gradiente-escuro_52683-63120.jpg?w=740&t=st=1721520972~exp=1721521572~hmac=ec183220fee925f0e493b2ccc0a87312500b2ab8cd5d26159cc99bc6a25e8c59">
+      <section 
+        data-background-image="https://img.freepik.com/vetores-gratis/fundo-hexagonal-com-gradiente-escuro_52683-63120.jpg?w=740&t=st=1721520972~exp=1721521572~hmac=ec183220fee925f0e493b2ccc0a87312500b2ab8cd5d26159cc99bc6a25e8c59"
+        >
         <h3 class="r-fit-text">Introdução a Observabilidade</h3>
       </section>
       <section>
-        <section data-background-image="examples/assets/image.jpg">
-          <h2 class="r-fit-text fragment custom blur">Sobre mim</h2>
+        <section 
+          data-background-image="examples/assets/image.jpg"
+          data-background-opacity="0.2"
+          >
+          <h2 class="r-fit-text">Quem sou eu?</h2>
         </section>
         <section data-background-image="https://img.freepik.com/vetores-gratis/fundo-hexagonal-com-gradiente-escuro_52683-63120.jpg?w=740&t=st=1721520972~exp=1721521572~hmac=ec183220fee925f0e493b2ccc0a87312500b2ab8cd5d26159cc99bc6a25e8c59">
           <h3>Dione Bastos</h3>
@@ -47,11 +53,11 @@
           <h2>Tecnologias Disrruptivas (blockchain/AI)</h2>
         </section>
       </section>
-        <section>
-          <p>Observabilidade é um conceito crucial no campo de engenharia de software e operações de TI, que se refere à capacidade de medir e monitorar o estado interno de um sistema através da coleta, análise e visualização de dados gerados por esse sistema.</p>
+        <section data-background-image="https://img.freepik.com/vetores-gratis/fundo-hexagonal-com-gradiente-escuro_52683-63120.jpg?w=740&t=st=1721520972~exp=1721521572~hmac=ec183220fee925f0e493b2ccc0a87312500b2ab8cd5d26159cc99bc6a25e8c59">
+          <p>Observabilidade é a capacidade de medir e monitorar o estado interno de um sistema por meio da coleta, análise e visualização de seus dados.</p>
         </section>
-        <section>
-          <p>Esses dados incluem métricas, logs e rastreamentos (traces), que são utilizados para entender o comportamento e o desempenho do sistema, identificar e diagnosticar problemas, e garantir a confiabilidade e a disponibilidade dos serviços.</p>
+        <section data-background-image="https://img.freepik.com/vetores-gratis/fundo-hexagonal-com-gradiente-escuro_52683-63120.jpg?w=740&t=st=1721520972~exp=1721521572~hmac=ec183220fee925f0e493b2ccc0a87312500b2ab8cd5d26159cc99bc6a25e8c59">
+          <p>Esses dados incluem métricas, logs e rastreamentos, usados para entender o comportamento e desempenho do sistema, diagnosticar problemas e garantir a confiabilidade e disponibilidade dos serviços.</p>
         </section>
         <section>
           <section>
