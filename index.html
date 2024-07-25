@@ -1,93 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Observabilidade</title>
 
-  <title>Observabilidade</title>
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
 
-  <link rel="stylesheet" href="dist/reset.css" />
-  <link rel="stylesheet" href="dist/reveal.css" />
-  <link rel="stylesheet" href="dist/theme/black.css" />
+    <style>
+      .blur {
+        filter: blur(5px);
+        -webkit-filter: blur(5px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+      }
+    </style>
 
-  <style>
-    .blur {
-      filter: blur(5px);
-      -webkit-filter: blur(5px);
-      -moz-filter: blur(5px);
-      -o-filter: blur(5px);
-      -ms-filter: blur(5px);
-    }
-  </style>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
 
-  <!-- Theme used for syntax highlighted code -->
-  <link rel="stylesheet" href="plugin/highlight/monokai.css" />
-</head>
-
-<body>
-  <div class="reveal">
-    <div class="slides">
-      <section 
-        data-background-image="https://img.freepik.com/vetores-gratis/fundo-hexagonal-com-gradiente-escuro_52683-63120.jpg?w=740&t=st=1721520972~exp=1721521572~hmac=ec183220fee925f0e493b2ccc0a87312500b2ab8cd5d26159cc99bc6a25e8c59"
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section
+          data-background-image="https://img.freepik.com/vetores-gratis/fundo-hexagonal-com-gradiente-escuro_52683-63120.jpg?w=740&t=st=1721520972~exp=1721521572~hmac=ec183220fee925f0e493b2ccc0a87312500b2ab8cd5d26159cc99bc6a25e8c59"
         >
-        <h3 class="r-fit-text">Introdução a Observabilidade</h3>
-      </section>
-      <section>
-        <section 
-          data-background-image="examples/assets/image.jpg"
-          data-background-opacity="0.2"
-          >
-          <h2 class="r-fit-text">Quem sou eu?</h2>
-        </section>
-        <section data-background-image="https://img.freepik.com/vetores-gratis/fundo-hexagonal-com-gradiente-escuro_52683-63120.jpg?w=740&t=st=1721520972~exp=1721521572~hmac=ec183220fee925f0e493b2ccc0a87312500b2ab8cd5d26159cc99bc6a25e8c59">
-          <h3>Dione Bastos</h3>
-        </section>
-        <section data-background-image="https://img.freepik.com/vetores-gratis/fundo-hexagonal-com-gradiente-escuro_52683-63120.jpg?w=740&t=st=1721520972~exp=1721521572~hmac=ec183220fee925f0e493b2ccc0a87312500b2ab8cd5d26159cc99bc6a25e8c59">
-          <h3>Sistema de Informação</h3>
-        </section>
-        <section data-background-image="https://img.freepik.com/vetores-gratis/fundo-hexagonal-com-gradiente-escuro_52683-63120.jpg?w=740&t=st=1721520972~exp=1721521572~hmac=ec183220fee925f0e493b2ccc0a87312500b2ab8cd5d26159cc99bc6a25e8c59">
-          <h2>2021</h2>
-        </section>
-        <section data-background-image="https://img.freepik.com/vetores-gratis/fundo-hexagonal-com-gradiente-escuro_52683-63120.jpg?w=740&t=st=1721520972~exp=1721521572~hmac=ec183220fee925f0e493b2ccc0a87312500b2ab8cd5d26159cc99bc6a25e8c59">
-          <h2>Tecnologias Disrruptivas (blockchain/AI)</h2>
-        </section>
-      </section>
-        <section data-background-image="https://img.freepik.com/vetores-gratis/fundo-hexagonal-com-gradiente-escuro_52683-63120.jpg?w=740&t=st=1721520972~exp=1721521572~hmac=ec183220fee925f0e493b2ccc0a87312500b2ab8cd5d26159cc99bc6a25e8c59">
-          <p>Observabilidade é a capacidade de medir e monitorar o estado interno de um sistema por meio da coleta, análise e visualização de seus dados.</p>
-        </section>
-        <section data-background-image="https://img.freepik.com/vetores-gratis/fundo-hexagonal-com-gradiente-escuro_52683-63120.jpg?w=740&t=st=1721520972~exp=1721521572~hmac=ec183220fee925f0e493b2ccc0a87312500b2ab8cd5d26159cc99bc6a25e8c59">
-          <p>Esses dados incluem métricas, logs e rastreamentos, usados para entender o comportamento e desempenho do sistema, diagnosticar problemas e garantir a confiabilidade e disponibilidade dos serviços.</p>
+          <h3 class="r-fit-text">Introdução a Observabilidade</h3>
         </section>
         <section>
-          <section>
-            <h2>
-              Grafana
-            </h2>
+          <section
+            data-background-image="examples/assets/image.jpg"
+            data-background-opacity="0.2"
+          >
+            <h2 class="r-fit-text">Quem sou eu?</h2>
           </section>
-          <section>
-            <p>Grafana é uma aplicação web de análise de código aberto multiplataforma e visualização interativa da web</p>
-            <img src="https://serviceup.com.br/wp-content/uploads/2022/11/grafana.png">
+          <section
+            data-auto-animate
+            data-background-image="https://img.freepik.com/vetores-gratis/fundo-hexagonal-com-gradiente-escuro_52683-63120.jpg?w=740&t=st=1721520972~exp=1721521572~hmac=ec183220fee925f0e493b2ccc0a87312500b2ab8cd5d26159cc99bc6a25e8c59"
+          >
+            <pre
+              data-id="code-animation"
+            ><code class="hljs php" data-trim data-line-numbers="3|5|7|9"><script type="text/template">
+              <?php
+ 
+                echo "Dione Bastos";
+              
+                echo "Sistema de Informação";
+
+                echo "2019";
+
+                echo "Tecnologias Disrruptivas (blockchain/AI)";
+              ?>
+            </script></code></pre>
           </section>
         </section>
+        <section
+          data-background-image="https://img.freepik.com/vetores-gratis/fundo-hexagonal-com-gradiente-escuro_52683-63120.jpg?w=740&t=st=1721520972~exp=1721521572~hmac=ec183220fee925f0e493b2ccc0a87312500b2ab8cd5d26159cc99bc6a25e8c59"
+        >
+          <p>
+            Observabilidade refere-se à capacidade de monitorar, mensurar e
+            entender o estado de um sistema ou aplicação por meio da análise de
+            seus resultados, logs e métricas de desempenho
+          </p>
+        </section>
+        <section
+          data-background-image="https://img.freepik.com/vetores-gratis/fundo-hexagonal-com-gradiente-escuro_52683-63120.jpg?w=740&t=st=1721520972~exp=1721521572~hmac=ec183220fee925f0e493b2ccc0a87312500b2ab8cd5d26159cc99bc6a25e8c59"
+        >
+          <p>
+            Inclusive os três pilares da Observabilidade são: <br />
+            Logs, Métricas e Rastreamento
+          </p>
+        </section>
+        <section
+          data-background-image="https://img.freepik.com/vetores-gratis/fundo-hexagonal-com-gradiente-escuro_52683-63120.jpg?w=740&t=st=1721520972~exp=1721521572~hmac=ec183220fee925f0e493b2ccc0a87312500b2ab8cd5d26159cc99bc6a25e8c59"
+        >
+          <p>Por que as empresas estão recorrendo à observabilidade?</p>
+        </section>
+        <section
+          data-background-image="https://img.freepik.com/vetores-gratis/fundo-hexagonal-com-gradiente-escuro_52683-63120.jpg?w=740&t=st=1721520972~exp=1721521572~hmac=ec183220fee925f0e493b2ccc0a87312500b2ab8cd5d26159cc99bc6a25e8c59"
+        >
+          <img
+            width="580px"
+            src="https://middleware.io/wp-content/uploads/2021/09/How-Microservices-architecture-works-1024x786.jpg"
+          />
+        </section>
+        <section
+          data-background-image="https://img.freepik.com/vetores-gratis/fundo-hexagonal-com-gradiente-escuro_52683-63120.jpg?w=740&t=st=1721520972~exp=1721521572~hmac=ec183220fee925f0e493b2ccc0a87312500b2ab8cd5d26159cc99bc6a25e8c59"
+        >
+          <p>Observabilidade x Monitoramento</p>
+        </section>
+        <section
+          data-background-image="https://img.freepik.com/vetores-gratis/fundo-hexagonal-com-gradiente-escuro_52683-63120.jpg?w=740&t=st=1721520972~exp=1721521572~hmac=ec183220fee925f0e493b2ccc0a87312500b2ab8cd5d26159cc99bc6a25e8c59"
+        >
+          <section>
+            <h2>OpenTelemetry</h2>
+          </section>
+          <section>
+            <h2>Grafana</h2>
+          </section>
+          <section>
+            <h2>Prometheus</h2>
+          </section>
+        </section>
+        <section
+          data-background-image="https://img.freepik.com/vetores-gratis/fundo-hexagonal-com-gradiente-escuro_52683-63120.jpg?w=740&t=st=1721520972~exp=1721521572~hmac=ec183220fee925f0e493b2ccc0a87312500b2ab8cd5d26159cc99bc6a25e8c59"
+        >
+          <section>
+            <h2>Vantagens</h2>
+          </section>
+          <section
+            data-auto-animate
+            data-background-image="https://img.freepik.com/vetores-gratis/fundo-hexagonal-com-gradiente-escuro_52683-63120.jpg?w=740&t=st=1721520972~exp=1721521572~hmac=ec183220fee925f0e493b2ccc0a87312500b2ab8cd5d26159cc99bc6a25e8c59"
+          >
+            <pre
+              data-id="code-animation"
+            ><code class="hljs php" data-trim data-line-numbers="3|5|7|9"><script type="text/template">
+              <?php
+ 
+                echo "Melhoria na Detecção de Problemas";
+              
+                echo "Escalabilidade";
+
+                echo "Auditoria e Registro";
+
+                echo "Feedback em Tempo Real";
+              ?>
+            </script></code></pre>
+          </section>
+          <section>Desvantagens</section>
+          <section
+            data-auto-animate
+            data-background-image="https://img.freepik.com/vetores-gratis/fundo-hexagonal-com-gradiente-escuro_52683-63120.jpg?w=740&t=st=1721520972~exp=1721521572~hmac=ec183220fee925f0e493b2ccc0a87312500b2ab8cd5d26159cc99bc6a25e8c59"
+          >
+            <pre
+              data-id="code-animation"
+            ><code class="hljs php" data-trim data-line-numbers="3|5|7|9"><script type="text/template">
+              <?php
+ 
+                echo "Curva de Aprendizado";
+              
+                echo "Custo";
+
+                echo "Volume de Dados";
+
+                echo "Overhead";
+              ?>
+            </script></code></pre>
+          </section>
+        </section>
+        <section
+          data-background="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYW9wZjJkYjZvcjBhNnR4ajVicHYyeGY2NXBjd3hudTk1eGJ1NmwzMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/13HgwGsXF0aiGY/giphy.gif"
+        >
+          <h2>Obrigado!</h2>
+        </section>
+      </div>
     </div>
-  </div>
 
-  <script src="dist/reveal.js"></script>
-  <script src="plugin/notes/notes.js"></script>
-  <script src="plugin/markdown/markdown.js"></script>
-  <script src="plugin/highlight/highlight.js"></script>
-  <script>
-    // More info about initialization & config:
-    // - https://revealjs.com/initialization/
-    // - https://revealjs.com/config/
-    Reveal.initialize({
-      hash: true,
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
 
-      // Learn about plugins: https://revealjs.com/plugins/
-      plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
-    });
-  </script>
-</body>
-
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
 </html>
